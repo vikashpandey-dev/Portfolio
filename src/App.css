@@ -1,0 +1,60 @@
+h1{
+    font-family: "Playfair Display", Georgia, serif;
+}
+body{
+    font-family: "Quicksand", Arial, sans-serif;
+}
+.textrgba{
+    color:rgba(0, 0, 0, 0.7);
+}
+.textp{
+    color: #999999;
+}
+.shadowsss{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.textblue{
+    color: #2c98f0;
+}
+.bgblue{
+    
+    background:#2c98f0 ;
+}
+.textred{
+    color: #ec5453;
+}
+.bgred{
+    background:#ec5453;
+}
+.textyellow{
+    color: #f9bf3f;
+}
+.bgyellow{
+    background: #f9bf3f;
+}
+.textbri{
+    color: #a84cb8;
+}
+.bgbri{
+    background: #a84cb8;
+}
+.tophex{
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 30.6px solid red;
+}
+.bottomhex{
+    rotate: 180deg;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 30.6px solid red;
+}
+.centerhex{
+width: 120px;
+height: 60px;
+
+}
