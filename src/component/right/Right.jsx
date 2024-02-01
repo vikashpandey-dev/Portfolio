@@ -4,6 +4,7 @@ import Who from "./Who";
 import Do from "./Do";
 import Skills from "./Skills";
 import Education from "./Education";
+import Experence from "./Experence";
 function Right() {
   return (
     <>
@@ -21,6 +22,9 @@ function Right() {
       </div>
       <div className="my-48 px-16">
         <Education/>
+      </div>
+      <div className="my-48 px-16">
+        <Experence/>
       </div>
     </>
   );

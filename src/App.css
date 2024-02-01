@@ -58,3 +58,16 @@ width: 120px;
 height: 60px;
 
 }
+.setborder{
+    border: 1px solid #e6e6e6 !important;
+}
+.xcxcxc::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    background: #f2f3f7;
+    top: 98px;
+    bottom: 20px;
+    margin-left: -32px;
+}
