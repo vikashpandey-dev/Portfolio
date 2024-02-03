@@ -32,7 +32,7 @@ function Skills() {
           her initial into the belt and made herself on the way.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-10" >
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10" >
         {skillsData.map((val,i)=>{
             return(
                 <>

@@ -60,15 +60,15 @@ function Experence() {
             WORK EXPERIENCE
           </h1>
         </div>
-        <div className="xcxcxc px-12 mt-7">
+        <div className="xcxcxc  md:px-12 mt-7">
           {jobPositions.map((val, i) => (
-            <div key={i} className="relative px-5">
+            <div key={i} className="relative px-2 md:px-5">
               <div className={i === 5 ? 'absolute left-[-47px] shadows w-8 h-8 bottom-0.5 rounded-full' : `absolute left-[-50px] shadows w-10 h-10 rounded-full `} style={{background:`${val.code}`}}>
                 {i === 5 ? null : <GoPencil className="ddddddddd iconscenter text-xl font-medium text-white" />}
               </div>
               <div className={i === 5 ? 'hidden bg-white' : 'bg-[#f2f3f7] my-3 py-5 px-10'}>
-                <div className="flex gap-2">
-                  <h1 className="text-xl font-medium">{val.title}</h1>
+                <div className="flex gap-1 md:gap-2">
+                  <h1 className=" text-smmd:text-xl font-medium">{val.title}</h1>
                   <p className="text-normal font-normal">{val.year}</p>
                 </div>
                 <p className="textp text-medium py-3">{val.description}</p>

@@ -10,28 +10,28 @@ import Contact from "./Contact";
 function Right() {
   return (
     <>
-      <div>
+      <div className="w-full bg-red-500">
         <Carousel />
       </div>
-      <div className="my-48 px-16">
+      <div className="my-48 px-3 md:px-16">
         <Who />
       </div>
-      <div className="my-48 px-16">
+      <div className="my-48 px-3 md:px-16">
         <Do/>
       </div>
-      <div className="my-48 px-16">
+      <div className="my-48 px-3 md:px-16">
         <Skills/>
       </div>
-      <div className="my-48 px-16">
+      <div className="my-48 px-3 md:px-16">
         <Education/>
       </div>
-      <div className="my-48 px-16">
+      <div className="my-48 px-3 md:px-16">
         <Experence/>
       </div>
-      <div className="my-48 px-16">
+      <div className="my-48 px-3 md:px-16">
       <Mywork/>
       </div>
-      <div className="my-48 px-16">
+      <div className="my-48 px-3 md:px-16">
         <Contact/>
       </div>
     </>

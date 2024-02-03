@@ -72,7 +72,7 @@ function Do() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-10 py-5 justify-center items-center  mt-20">
+      <div className="grid  grid-cols-1 md:grid-cols-3 gap-10 py-5 justify-center items-center  mt-20">
         {cards.map((val, i) => (
           <div
             key={i}

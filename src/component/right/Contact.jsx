@@ -14,7 +14,7 @@ function Contact() {
             RECENT WORK
           </h1>
         </div>
-        <div className="grid grid-cols-2 mt-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-7">
           <div className="leftcols">
             <div className="w-full items-center gap-3 flex">
               <div className="w-28 h-28 bg-[#f2f3f7] flex justify-center text-4xl text-[#2c98f0] items-center">
@@ -28,7 +28,7 @@ function Contact() {
               <div className="w-28 h-28 bg-[#f2f3f7] flex justify-center text-4xl text-[#2c98f0] items-center">
                 <FaRegMap />
               </div>
-              <div className="text-[#000]  w-[200px]">
+              <div className="text-[#000] w-auto  md:w-[200px]">
                 <p className="font-light text-[14px]">198 West 21th Street, Suite 721 New York NY 10016</p>
               </div>
             </div>

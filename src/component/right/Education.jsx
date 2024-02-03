@@ -41,7 +41,7 @@ function EducationItem({ data, isOpen, onClick }) {
       <div className="py-1 transition-all duration-1000">
   <div
     className={`w-full overflow-hidden transition-all duration-5000 border border-inherit ${
-      isOpen ? "visible h-[100px]" : "hidden h-0"
+      isOpen ? "visible h-[150px]" : "hidden h-0"
     }`}
   >
     <div className="px-10 py-5">
@@ -63,7 +63,7 @@ function Education() {
 
   return (
     <div>
-      <div>
+      <div className="">
         <p className="text-xs font-medium textp tracking-[5px] my-10">
           EDUCATION
         </p>

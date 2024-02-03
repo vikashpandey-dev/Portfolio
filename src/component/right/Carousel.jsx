@@ -19,23 +19,20 @@ function Carousel() {
   return (
     <div className="carousel w-full h-[100vh]">
       {mydata.map((val, i) => (
-      <>
         <div
           key={i} // Provide a unique key for each element
-          className="bg-cover bg-center h-full    "
+          className="bg-cover  bg-center h-full"
           style={{ backgroundImage: `url('${img}')` }}
         >
-         <div className='px-16 py-10 tracking-[2px] pt-[22%] '>
-            <h1 className='text-6xl font-bold'>{val.greeting}</h1>
-            <h1 className='text-6xl font-bold py-4'>I'm {val.name}</h1>
-            <p className='text-xl font-medium textrgba'>{val.description}</p>
-         </div>
-        <div className="px-16 h-12">
-            <button className='px-10 tracking-[2px] py-3 font-medium textp  border border-gray-950'>Download CV</button>
+          <div className='px-16 py-10 tracking-[2px] md:pt-[22%] '>
+            <h1 className=' text-2xl md:text-6xl font-bold'>{val.greeting}</h1>
+            <h1 className=' text-2xl md:text-6xl font-bold py-4'>I'm {val.name}</h1>
+            <p className='text-xl font-medium text-[your_color]'>{val.description}</p>
+          </div>
+          <div className="px-16 h-12">
+            <button className='px-10 tracking-[2px] py-3 font-medium text-[your_button_color] border border-gray-950'>Download CV</button>
+          </div>
         </div>
-        </div>
-       
-      </>
       ))}
     </div>
   );
