@@ -5,6 +5,8 @@ import Do from "./Do";
 import Skills from "./Skills";
 import Education from "./Education";
 import Experence from "./Experence";
+import Mywork from "./Mywork";
+import Contact from "./Contact";
 function Right() {
   return (
     <>
@@ -25,6 +27,12 @@ function Right() {
       </div>
       <div className="my-48 px-16">
         <Experence/>
+      </div>
+      <div className="my-48 px-16">
+      <Mywork/>
+      </div>
+      <div className="my-48 px-16">
+        <Contact/>
       </div>
     </>
   );

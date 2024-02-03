@@ -29,7 +29,7 @@ function Navbar() {
   ];
   return (
     <>
-      <div className="mainnav w-full bg-[#f2f3f7] flex justify-center items-center flex-col py-14 sticky top-0 ">
+      <div className="mainnav w-full h-[100vh]  overflow-y-scroll bg-[#f2f3f7] flex justify-center items-center flex-col py-14 sticky top-0 ">
         <div className=" w-40 h-40 ">
           <img
             className="w-full h-full rounded-full object-cover"

@@ -80,3 +80,9 @@ height: 60px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.image-container {
+   /* Adjust the height as needed */
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center; /* Center the background image */
+    /* Add any additional styling you need */
+  }

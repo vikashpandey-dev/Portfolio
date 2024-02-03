@@ -6,7 +6,7 @@ function Main() {
   return (
     <>
       <div className="flex w-[78%]  justify-center mx-auto">
-        <div className="w-[500px]  ">
+        <div className="w-[450px]  ">
           <Navbar />
         </div>
         <div className="w-full bg-white">
