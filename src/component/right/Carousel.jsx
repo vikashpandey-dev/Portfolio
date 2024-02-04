@@ -1,7 +1,7 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import img from "../../../src/assets/img_bg_1.jpg"
-
-
+import { useSpring, animated, config } from 'react-spring';
+import Sidebar from '../left/Sidebar';
 function Carousel() {
   let mydata = [
     {
@@ -15,23 +15,39 @@ function Carousel() {
   ];
 
   
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const animationProps = useSpring({
+    opacity: isMounted ? 1 : 0,
+    transform: isMounted ? 'translateY(0%)' : 'translateY(100%)',
+    config: config.slow,
+  });
 
   return (
     <div className="carousel w-full h-[100vh]">
+      
       {mydata.map((val, i) => (
         <div
           key={i} // Provide a unique key for each element
           className="bg-cover  bg-center h-full"
           style={{ backgroundImage: `url('${img}')` }}
+          
         >
-          <div className='px-16 py-10 tracking-[2px] md:pt-[22%] '>
+       <animated.div style={animationProps}  className='breakmedia'>
+         <div className='px-16 py-10 tracking-[2px] md:pt-[22%] '>
             <h1 className=' text-2xl md:text-6xl font-bold'>{val.greeting}</h1>
             <h1 className=' text-2xl md:text-6xl font-bold py-4'>I'm {val.name}</h1>
+            {/* <Sidebar/> */}
             <p className='text-xl font-medium text-[your_color]'>{val.description}</p>
           </div>
           <div className="px-16 h-12">
             <button className='px-10 tracking-[2px] py-3 font-medium text-[your_button_color] border border-gray-950'>Download CV</button>
           </div>
+         </animated.div>
         </div>
       ))}
     </div>

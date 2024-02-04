@@ -1,36 +1,48 @@
-import React from "react";
+import React, { useState } from 'react';
+import Navbar from './Navbar';
 import { FaHeart } from "react-icons/fa";
-import Sidebar from "./Sidebar";
-function Navbar() {
-  const navbar = [
-    {
-      name: "HOME",
-    },
-    {
-      name: "ABOUT",
-    },
-    {
-      name: "SERVICES",
-    },
-    {
-      name: "SKILLS",
-    },
-    {
-      name: "EDUCATION",
-    },
-    {
-      name: "EXPERIENCE",
-    },
-    {
-      name: "BLOG",
-    },
-    {
-      name: "CONTACT",
-    },
-  ];
+const Sidebar = () => {
+    const navbar = [
+        {
+          name: "HOME",
+        },
+        {
+          name: "ABOUT",
+        },
+        {
+          name: "SERVICES",
+        },
+        {
+          name: "SKILLS",
+        },
+        {
+          name: "EDUCATION",
+        },
+        {
+          name: "EXPERIENCE",
+        },
+        {
+          name: "BLOG",
+        },
+        {
+          name: "CONTACT",
+        },
+      ];
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <>
-      <div className="mainnav w-full h-[100vh]  overflow-y-scroll bg-[#f2f3f7] flex justify-center items-center flex-col py-14 sticky top-0 ">
+     <button className="toggle-button" onClick={toggleSidebar}>
+        Togglessssssssssssssssssssssssssss
+      </button>
+      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+     
+     <div className="sidebar-content">
+     <div className="mainnav w-full    bg-[#f2f3f7] flex justify-center items-center flex-col py-14 sticky top-0 ">
         <div className=" w-40 h-40 ">
           <img
             className="w-full h-full rounded-full object-cover"
@@ -78,8 +90,11 @@ function Navbar() {
           </p>
         </div>
       </div>
+     </div>
+   </div>
     </>
+  
   );
-}
+};
 
-export default Navbar;
+export default Sidebar;

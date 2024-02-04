@@ -52,7 +52,7 @@ function Experence() {
   return (
     <>
       <div className="relative">
-        <div>
+        <div data-aos="fade-down-right"  data-aos-duration="800" data-aos-delay='100'>
           <p className="text-xs font-medium textp tracking-[5px] my-10">
             EXPERIENCE
           </p>
@@ -62,7 +62,9 @@ function Experence() {
         </div>
         <div className="xcxcxc  md:px-12 mt-7">
           {jobPositions.map((val, i) => (
-            <div key={i} className="relative px-2 md:px-5">
+            <div key={i} className="relative px-2 md:px-5"  data-aos={i % 2==0 ? "fade-left" : "fade-right"}
+            data-aos-duration="800" 
+            data-aos-delay={`${i * 100}`}>
               <div className={i === 5 ? 'absolute left-[-47px] shadows w-8 h-8 bottom-0.5 rounded-full' : `absolute left-[-50px] shadows w-10 h-10 rounded-full `} style={{background:`${val.code}`}}>
                 {i === 5 ? null : <GoPencil className="ddddddddd iconscenter text-xl font-medium text-white" />}
               </div>

@@ -1,9 +1,18 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { FaRegLightbulb } from "react-icons/fa";
 import { TiGlobeOutline } from "react-icons/ti";
 import { GoDatabase } from "react-icons/go";
 import { BsPhone } from "react-icons/bs";
+import 'aos/dist/aos.css'; // Import the AOS styles from the package
+
+
+import AOS from 'aos';
+
 function Do() {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init();
+  }, []);
   const cards = [
     {
       type: "Web Design",
@@ -63,7 +72,7 @@ function Do() {
 
   return (
     <>
-      <div>
+      <div data-aos="fade-down-right"  data-aos-duration="800" data-aos-delay='100'>
         <p className="text-xs font-medium textp tracking-[5px] my-10">
           WHAT I DO?
         </p>
@@ -72,13 +81,16 @@ function Do() {
         </h1>
       </div>
 
-      <div className="grid  grid-cols-1 md:grid-cols-3 gap-10 py-5 justify-center items-center  mt-20">
+      <div className="grid  grid-cols-1 md:grid-cols-3 gap-10 py-5 justify-center items-center  mt-20" >
         {cards.map((val, i) => (
           <div
             key={i}
             className={`h-[300px] shadowsss flex justify-center my-10 items-center flex-col gap-2 relative `}
             style={{ borderBottom: `2px solid ${val.code}` }}
-          >
+            data-aos={i < 3 ? "fade-up" : "fade-up"}
+            data-aos-duration="800" 
+            data-aos-delay={`${i * 100}`}
+            >
             <div className="hexagon  absolute bottom-[233px]">
               <div
                 style={{

@@ -18,7 +18,7 @@ function Skills() {
   ];
   return (
     <>
-      <div>
+      <div data-aos="fade-down-right"  data-aos-duration="800" data-aos-delay='100'>
         <p className="text-xs font-medium textp tracking-[5px] my-10">
           MY SPECIALTY
         </p>
@@ -36,7 +36,8 @@ function Skills() {
         {skillsData.map((val,i)=>{
             return(
                 <>
-       <div>
+       <div  data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'} data-aos-duration="800" 
+            data-aos-delay={`${i * 100}`} >
        <div className="flex justify-between py-2" style={{ width: `${val.percentage}%` }}>
         <h3 className="text-normal font-medium">{val.skill}</h3>
          <p className="text-medium" style={{ color: `${val.code}` }}  > {val.percentage}%</p>

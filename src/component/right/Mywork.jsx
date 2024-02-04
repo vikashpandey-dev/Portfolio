@@ -35,7 +35,7 @@ function Mywork() {
   return (
     <>
       <div>
-        <div>
+        <div data-aos="fade-down-right"  data-aos-duration="800" data-aos-delay='100'>
           <p className="text-xs font-medium textp tracking-[5px] my-10">
             MY WORK
           </p>
@@ -50,7 +50,18 @@ function Mywork() {
                 key={i}
                 className="image-container w-full h-80"
                 style={{ backgroundImage: `url(${val.work})` }}
-              >
+                data-aos={
+                  i === 0
+                    ? "fade-right"
+                    : i === 1
+                    ? "fade-left"
+                    : i === 2
+                    ? "fade-up"
+                    : "fade-up"
+                }
+                data-aos-duration="800"
+                data-aos-delay={`${i * 100}`}
+            >
                 <div className="overlay justify-between py-3 px-3">
                   <div className="">
                     <h1 className="text-white">Work 0{i + 1}</h1>

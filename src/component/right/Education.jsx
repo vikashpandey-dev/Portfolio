@@ -29,7 +29,7 @@ const educationData = [
 
 function EducationItem({ data, isOpen, onClick }) {
   return (
-    <div className="mb-1 ">
+    <div className="mb-1 " data-aos="fade-down-left"  data-aos-duration="800" data-aos-delay='100' >
       <div
         className={`w-full h-12  cursor-pointer setborder transition-all duration-1000 px-10 flex justify-between items-center text-normal font-normal tracking-[2px] text-[#333333] `}
         style={{ background: `${isOpen ? "#157bcd" : "#f2f3f7"}`,color: `${isOpen ? "#fff" : "#000"}` }}
@@ -63,7 +63,7 @@ function Education() {
 
   return (
     <div>
-      <div className="">
+      <div className="" data-aos="fade-down-left"  data-aos-duration="800" data-aos-delay='100'>
         <p className="text-xs font-medium textp tracking-[5px] my-10">
           EDUCATION
         </p>
