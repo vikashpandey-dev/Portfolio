@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import Sidebar from "./Sidebar";
 import { useDispatch, useSelector } from "react-redux";
@@ -37,6 +37,11 @@ function Navbar() {
     dispatch({ type: "scroll", payload: name });
 
   }
+  const [active,setActive]=useState(0)
+  const handleactive=(val)=>{
+    
+    setActive(val)
+  }
   return (
     <>
       <div className="hidden">
@@ -65,7 +70,12 @@ function Navbar() {
             return (
               <>
                 <li className="py-2 text-sm font-normal tracking-[2px] textrgba" onClick={()=>handlescroll(val.name)}>
-                  <button>{val.name}</button>
+                  <button onClick={()=>{handleactive(i)}} 
+                  className={`${
+                    active === i ? 'border-b transition duration-200 border-blue-500 text-[#2c98f0]' : ''
+                  } hover:border-b hover:transition hover:duration-2000 hover:border-blue-500 hover:text-[#2c98f0] `}
+                
+                  >{val.name}</button>
                 </li>
               </>
             );

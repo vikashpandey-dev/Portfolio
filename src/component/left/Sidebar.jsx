@@ -48,6 +48,11 @@ const Sidebar = () => {
     dispatch({ type: "scroll", payload: name });
 
   }
+  const [active,setActive]=useState(0)
+  const handleactive=(val)=>{
+    
+    setActive(val)
+  }
   return (
     <>
       <div
@@ -86,7 +91,11 @@ const Sidebar = () => {
               return (
                 <>
                   <li className="py-2 text-sm font-normal tracking-[2px] textrgba" onClick={()=>handlescroll(val.name)}>
-                    <button>{val.name}</button>
+                    <button onClick={()=>{handleactive(i)}} 
+                     className={`${
+                      active === i ? 'border-b transition duration-200 border-blue-500 text-[#2c98f0]' : ''
+                    } hover:border-b hover:transition hover:duration-2000 hover:border-blue-500 hover:text-[#2c98f0] `}
+                    >{val.name}</button>
                   </li>
                 </>
               );
