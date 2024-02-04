@@ -63,7 +63,7 @@ const Sidebar = () => {
             <RxCross1 />
           </div>
         ) : null}
-        <div className="mainnav w-full h-full   flex justify-center items-center flex-col  ">
+        <div className="mainnav w-full h-fit   flex md:justify-center   items-center flex-col  ">
           <div className=" w-40 h-40 ">
             <img
               className="w-full h-full rounded-full object-cover"
@@ -71,7 +71,7 @@ const Sidebar = () => {
               alt=""
             />
           </div>
-          <div className="flex justify-center items-center flex-col  gap-2">
+          <div className="flex justify-center items-center flex-col  gap-2 py-5">
             <h1 className="text-2xl font-bold">Vikash Pandey</h1>
 
             <span className="text-sm font-light">

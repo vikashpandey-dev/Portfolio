@@ -42,8 +42,8 @@ function Navbar() {
       <div className="hidden">
         <Sidebar />
       </div>
-      <div className="mainnav w-full h-[100vh]  overflow-y-scroll bg-[#f2f3f7] flex justify-center items-center flex-col py-14 sticky top-0 ">
-        <div className=" w-40 h-40 ">
+      <div className="mainnav w-full h-[100vh] pt-20  overflow-y-scroll bg-[#f2f3f7] flex justify-center items-center flex-col  sticky top-0 ">
+        <div className=" w-40 h-40  ">
           <img
             className="w-full h-full rounded-full object-cover"
             src="https://images.unsplash.com/photo-1705899354898-bbc30144e432?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D"

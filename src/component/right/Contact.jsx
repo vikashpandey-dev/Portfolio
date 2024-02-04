@@ -8,10 +8,10 @@ function Contact() {
       <div className="">
         <div data-aos="fade-down-right"  data-aos-duration="800" data-aos-delay='100'>
           <p className="text-xs font-medium textp tracking-[5px] my-10">
-            MY WORK
+          GET IN TOUCH
           </p>
           <h1 className="font-bold text-[#000] text-xl tracking-[5px]">
-            RECENT WORK
+          CONTACT
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-7">
