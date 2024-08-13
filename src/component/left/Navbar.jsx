@@ -52,7 +52,7 @@ function Navbar() {
           <img
             className="w-full h-full rounded-full object-cover"
             src="/public/ashish.jpg"
-            alt=""
+            alt="ashish"
           />
         </div>
         <div className="flex justify-center items-center flex-col py-5 gap-2">
