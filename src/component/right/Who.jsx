@@ -42,7 +42,7 @@ function Who() {
           WHO AM I?
         </h1>
         <p className="my-20 px-1 textp">
-          <strong>Hi, I'm Jackson Ford</strong>
+          <strong>Hi, I'm Ashish Ford</strong>
           On her way, she met a copy. The copy warned the Little Blind Text,
           that where it came from, it would have been rewritten a thousand times
           and everything that was left from its origin would be the word "and,"

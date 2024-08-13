@@ -77,11 +77,11 @@ const Sidebar = () => {
             />
           </div>
           <div className="flex justify-center items-center flex-col  gap-2 py-5">
-            <h1 className="text-2xl font-bold">Vikash Pandey</h1>
+            <h1 className="text-2xl font-bold">Ashish Pandey</h1>
 
             <span className="text-sm font-light">
               <strong className="text-[#2c98f0]">
-                Associate MERN STACK DEVELOPER
+                React DEVELOPER
               </strong>{" "}
               IN INDIA
             </span>

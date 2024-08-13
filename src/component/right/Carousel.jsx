@@ -11,7 +11,7 @@ function Carousel() {
   let mydata = [
     {
       greeting: "Hi!",
-      name: "Jackson",
+      name: "Ashish",
       description: "100% html5 tailwind React",
       madeBy: "colorlib.com",
       backgroundImage:
@@ -66,7 +66,8 @@ function Carousel() {
             </div>
             <div className="px-16 h-12">
               <button className="px-10 tracking-[2px] py-3 font-medium text-[your_button_color] border border-gray-950">
-                Download CV
+              <a href="/public/ashish.pdf" download="Ashish_Pandey_Resume.pdf">Download Resume</a>
+
               </button>
             </div>
           </animated.div>
