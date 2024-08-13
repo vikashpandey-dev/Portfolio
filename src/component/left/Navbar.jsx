@@ -52,7 +52,7 @@ function Navbar() {
           <img
             className="w-full h-full rounded-full object-cover"
             src="https://drive.google.com/thumbnail?id=186Dj1kUiIvr1QJil3X-bIZVL259DmUSo" alt="Google Drive Image"
-           
+          
           />
         </div>
         <div className="flex justify-center items-center flex-col py-5 gap-2">

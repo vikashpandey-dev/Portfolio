@@ -72,8 +72,7 @@ const Sidebar = () => {
           <div className=" w-40 h-40 ">
             <img
               className="w-full h-full rounded-full object-cover"
-              src="https://images.unsplash.com/photo-1705899354898-bbc30144e432?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D"
-              alt="ashish"
+              src="https://drive.google.com/thumbnail?id=186Dj1kUiIvr1QJil3X-bIZVL259DmUSo" alt="Google Drive Image"
             />
           </div>
           <div className="flex justify-center items-center flex-col  gap-2 py-5">
